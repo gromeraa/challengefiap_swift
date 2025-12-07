@@ -53,4 +53,8 @@ Principais entregáveis:
 - Identidade inspirada nas campanhas Swift reais, transcrevendo cores, tipografia e tom.
 - Hierarquia visual organizada por variáveis CSS para facilitar manutenção e escalabilidade.
 - Interações acessíveis: foco visível, suporte a teclado e mensagens de feedback animadas.
+<<<<<<< HEAD
 - Lógica de carrinho mantida no front-end para demonstrar a regra de negócio mesmo sem backend.
+=======
+- Lógica de carrinho mantida no front-end para demonstrar a regra de negócio mesmo sem backend.
+>>>>>>> b2dbc29a95953f931ecd9551c17b8147c6495e72
