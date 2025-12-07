@@ -1,6 +1,6 @@
 # Challenge Swift
 
-Protótipo completo de e-commerce desenvolvido para o Challenge Swift, recriando a experiência digital da marca com foco em responsividade, fidelização e jornada de compra. O repositório reúne tanto o front-end navegável quanto o modelo de dados pensado para sustentar a operação.
+Protótipo completo de e-commerce desenvolvido para o Challenge Swift da FIAP, recriando a experiência digital da marca com foco em responsividade, fidelização e jornada de compra. O repositório reúne tanto o front-end navegável quanto o modelo de dados pensado para sustentar a operação.
 
 ## 🗂️ Estrutura do projeto
 
@@ -24,7 +24,7 @@ Protótipo completo de e-commerce desenvolvido para o Challenge Swift, recriando
 - **Bootstrap 5** para grid responsivo e utilitários produtivos.
 - **JavaScript Vanilla (ES6+)** para interações (carrossel, carrinho, cupons, navegação, animações).
 - **Font Awesome** e **Google Fonts** para identidade visual próxima da marca.
-- **Modelo de dados em XML** contemplando visão de negócio, lógica e física do banco.
+- **Modelo de dados em PDF** contemplando visão de negócio, lógica e física do banco.
 
 ## 🚀 Como executar localmente
 
@@ -54,14 +54,3 @@ Principais entregáveis:
 - Hierarquia visual organizada por variáveis CSS para facilitar manutenção e escalabilidade.
 - Interações acessíveis: foco visível, suporte a teclado e mensagens de feedback animadas.
 - Lógica de carrinho mantida no front-end para demonstrar a regra de negócio mesmo sem backend.
-
-## 🔭 Próximos passos sugeridos
-
-1. Construir uma API (Node/Express ou Serverless) para persistir carrinho, cupons e clube de fidelidade.
-2. Integrar CMS ou painel administrativo para gestão de catálogo e promoções.
-3. Adicionar testes automatizados (Cypress/Playwright) para cobrir fluxos críticos da jornada.
-4. Publicar a versão web no GitHub Pages ou Vercel para fácil demonstração.
-
-## 📬 Contato
-
-Projeto mantido por **Gabriel Romero**. Entre em contato pelo [LinkedIn](https://www.linkedin.com/in/gromeraa) ou envie uma mensagem via GitHub.
