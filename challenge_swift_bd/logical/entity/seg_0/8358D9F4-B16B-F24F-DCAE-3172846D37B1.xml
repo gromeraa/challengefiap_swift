@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8358D9F4-B16B-F24F-DCAE-3172846D37B1" name="T_ITENS">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-21 23:00:46 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_item" id="620F1C75-79E6-B40A-83BC-6D06D57F1A3B">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:10:35 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_categoria" id="B2E3FA73-9645-56A8-9BF7-CE46A7B1D799">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:20:21 UTC</createdTime>
+<generatorID>64D40A23-7D95-CD90-D534-C75A0B6FF804</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>C23BC42A-2936-6246-4C78-43966CD92AE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_item" id="A6B8FB0C-5C20-94AC-D0DF-1E691B6C16D8">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:10:46 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_item" id="7ECB808C-5E00-3342-D8F0-786839A35228">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:16:13 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_estoque" id="72048899-8EEB-1CEA-93B3-81DE93EA626F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:11:21 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86763A92-6BC7-42F8-40DD-BE414393CBAD" name="T_ITENS PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:10:44 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>620F1C75-79E6-B40A-83BC-6D06D57F1A3B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

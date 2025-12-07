@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC021C32-B583-B76F-5DC1-9BBD76F56D14" name="T_AUTENTICA">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:20:39 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_autenticacao" id="BF98C77E-4760-BADC-0B0B-836EF3C827C4">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:22:25 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="0D46ACF8-9E3A-E214-D0B0-87AA660D897F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:23:04 UTC</createdTime>
+<generatorID>9B6DEFF6-456D-13B3-4124-E40F236394A4</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>11A442D0-79D8-E6E4-C40B-D4D2F8553064</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_login" id="ED578C40-6284-CACD-681C-B2D8A3934790">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:23:18 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_senha" id="EE0A677F-11B5-ADE8-D407-D0F4AAB0781F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:23:36 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F3AADC67-7001-707B-0C5B-5C1E84F4ACD5" name="T_AUTENTICA PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:22:35 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BF98C77E-4760-BADC-0B0B-836EF3C827C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

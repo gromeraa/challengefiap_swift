@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC0D518E-3084-6D43-C798-E1BD64C8DEFF" name="T_USER_PF">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>FFF23158-179C-459B-8AAC-37E634A02423</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_USER_cd_user" id="19695FB7-D397-2ED2-8FD5-CB38EB878BB8">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>598D43A7-5B67-DDF7-A98E-E10C6AE9025B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31B68E3B-6352-7D78-428A-6C414782742C" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="cd_user_pf" id="4522659B-5D2F-AD03-4D3B-B60B55277461">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>85E12A9D-D621-275D-B076-E053EF6FD87D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USER_SEXO_cd_sexo" id="3D4FD76E-4B40-420E-EDA8-78B108132EA4">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>AB7CF7F1-8DC1-AA66-28AA-EBA7FABC052B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf" id="0A882E5D-6F08-F106-FA7E-180E3052DE61">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>65800714-E062-A526-8C8E-653286346169</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_rg" id="26A47B59-52F7-111D-6AEF-BF319797C69F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>B8E5B1C9-7871-130E-67D2-3A5368BCB1F7</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nasc" id="07CD39D8-BA83-CFB4-9BEE-C7B8C730F3E5">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>57A788A6-535C-5D13-6752-6348C2B71FB9</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USER_SEXO_cd_sexo1" id="2A27298D-EFE7-4DE1-156D-79C23A04C19B">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>20686EB5-A813-322A-F97A-674774F1596B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sexo" id="E0F0A6DF-63A4-F4F9-7AAC-7E207E33ED62">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>A6D42A40-3D0A-4770-32F6-A5DF6573E1A2</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3772FA4B-F48C-B6EA-909E-1CFBA8934223" name="T_USER_PF_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>33F06F98-A886-AE02-4DB1-0DB84F64930A</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4522659B-5D2F-AD03-4D3B-B60B55277461"/>
+<colUsage columnID="19695FB7-D397-2ED2-8FD5-CB38EB878BB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F39EFBBB-B602-E95C-26E0-12052787198D" name="T_USER_PF__IDX">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F4010A03-9BCA-B571-28E1-D42CFE3C3732</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3D4FD76E-4B40-420E-EDA8-78B108132EA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F62D0D29-91CE-FFAC-A419-0042D4DD6A90" name="T_USER_PF_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>1389668B-6934-3172-B347-520C138DB3A2</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19695FB7-D397-2ED2-8FD5-CB38EB878BB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

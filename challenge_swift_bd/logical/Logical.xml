@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4A115757-15CD-18C1-E12B-D3BAC791B52C" mainViewID="24B12C8B-D67B-01C9-7BBF-76BF5F9521D6">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:18:40 UTC</createdTime>
+<ownerDesignName>BD_CAP7_RM562848</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9097EE91-811E-E69B-21CC-882E916B97FE" name="T_ENDERECO">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:29:18 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_endereco" id="787C1D67-4D0D-1381-D35F-D5EF47D929A8">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:39:21 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="709F141B-AA45-1FDF-7455-961200FE8302">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:40:05 UTC</createdTime>
+<generatorID>9FCCD55D-2308-CA03-BDB7-E854E531A276</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>11A442D0-79D8-E6E4-C40B-D4D2F8553064</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_bairro" id="369ECB1B-2A5F-52A1-78DF-CA260B35266D">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:38:58 UTC</createdTime>
+<generatorID>09A3B0AC-B969-A136-95A9-E06F475EE05B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>24268E58-AF07-6804-8B28-8B216307CD43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_rua" id="7AA655E1-6390-3E3A-198B-3C0AC2D94EDB">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:38:15 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_casa" id="B8BF6270-0403-72B6-1F6E-A588FD6C01D8">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:38:35 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cep" id="6F95ECB7-16EB-1DFA-9601-2A99FC1D039D">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:39:51 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_complemento" id="A8D2257F-1DA0-5DE4-CF46-91BFFA4D5DF1">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:38:47 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4500012E-A833-21D7-EFDE-D1EDBD60C88B" name="T_ENDERECO PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:39:44 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>787C1D67-4D0D-1381-D35F-D5EF47D929A8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

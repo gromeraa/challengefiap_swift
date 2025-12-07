@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E676E0E-7D2F-5DCE-02CD-2914DB027E87" name="T_TELEFONE">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>1C7E0652-352E-234B-1E90-15D16349EAFB</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_USER_cd_user" id="8DFF4F64-94FB-596C-C6CE-5687EE30AA3E">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>67D11846-1F1C-ABD1-DF96-0B3BA42014BE</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="612F1564-CAA6-4197-315E-4B98B0FD679A" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="cd_telefone" id="8E92653C-D705-3E34-8441-CF185D3390C2">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>7E95CBAC-F0A7-4D66-E30E-5545009E4D1A</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_TIPO_TELEFONE_cd_tipo_telefone" id="7B1C2EB6-139D-C712-011D-07F8FD07E5B0">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>1154B735-1D1D-4EB0-4AED-74545BD29942</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B23D771-D37E-6B14-B955-EF733581256D" referredColumn="D3C0BC9F-FB31-ACF4-A478-656466D8BC38"/>
+</associations>
+</Column>
+<Column name="nr_telefone" id="E043EC95-C14B-F49B-611C-31071CD37575">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>58F8FF23-B8B0-FF8A-34FA-F92482AD3CD9</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_ddd" id="FC944EE0-EC74-D699-0B09-8D90466DDA06">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>D1F86FC1-AF10-9E36-741F-7DA8AD3AABD6</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB3C0776-9CE7-37BF-61C6-40A658522208" name="T_TELEFONE_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>455BE448-84B3-0D0B-8D39-9383DD933A52</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E92653C-D705-3E34-8441-CF185D3390C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="489D16A4-52A4-7F85-3DC4-E6DDBC6E7CF9" name="T_TELEFONE_T_TIPO_TELEFONE_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>D5F94D92-D81A-0593-6EA9-3F2CAB8506E7</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B1C2EB6-139D-C712-011D-07F8FD07E5B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9009BA66-C95A-EE6C-07D6-4A3DA56325DF" name="T_TELEFONE_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>D3A95B29-4C9C-C9AA-C864-1ED9D4685255</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DFF4F64-94FB-596C-C6CE-5687EE30AA3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

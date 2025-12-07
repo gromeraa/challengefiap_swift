@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA41A537-D782-670C-F029-CBB66DF1F09D" name="T_ESTADO">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>FA2B1841-C5A7-6120-12DC-F78B771A1EC9</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estado" id="C7740D4E-A06D-BAA6-140F-DD66CC509685">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>5932A377-145A-E2DB-01DF-B2129EFE040F</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_REGIAO_cd_regiao" id="DDC2768D-A2DD-C946-8E96-B27C7C37F32B">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>023506A2-8B3E-B149-DF73-A2DF18BAFED9</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42A3596D-0F25-63FA-30F3-18262D8A418D" referredColumn="5B7ED03B-2923-D1A3-91B4-31E480ECE219"/>
+</associations>
+</Column>
+<Column name="nm_estado" id="A840770D-1465-487D-F8D8-F13814973F4C">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>0B0864CA-80FE-E1AB-E1BF-E8E667A98C6E</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_estado" id="BB7BC7BC-B920-3F30-6E1F-BCCE1BF0C4C6">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>C1B1F235-0033-044A-B98A-BEC95B538490</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9080B20-80F3-3B8F-258B-F7E97EA95F93" name="T_ESTADO_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>83331F4C-707C-504B-249E-29AD9C1493BD</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7740D4E-A06D-BAA6-140F-DD66CC509685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EC572CC-2698-1DDF-3A1E-28890CD5145B" name="T_ESTADO_T_REGIAO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>B351784B-1B1E-ED81-1B5F-138099FF9883</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDC2768D-A2DD-C946-8E96-B27C7C37F32B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

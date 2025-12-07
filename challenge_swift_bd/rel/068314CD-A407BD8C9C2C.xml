@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="068314CD-0C36-4F7D-4081-A407BD8C9C2C" mainViewID="E3F7766A-1C62-037A-1044-FB6AD703E9C0">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:18:45 UTC</createdTime>
+<ownerDesignName>BD_CAP7_RM562848</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

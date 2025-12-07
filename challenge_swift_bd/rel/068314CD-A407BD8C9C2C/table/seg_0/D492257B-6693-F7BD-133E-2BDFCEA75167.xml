@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D492257B-6693-F7BD-133E-2BDFCEA75167" name="T_USER">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>821F13B6-8A6D-9F3C-F138-51FD8B2C9E2B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_user" id="C0FC1F15-09FD-A112-1654-8CAC42B82F07">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>11A442D0-79D8-E6E4-C40B-D4D2F8553064</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_user" id="C3C4365E-2890-FB79-6E25-1919FB3A57CD">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>092F254F-230A-9EFD-478C-1F28548A689B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_autenticacao" id="939EF711-B3A6-2CBB-B3F6-369D2CAB3C07">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-21 22:57:29 UTC</createdTime>
+<generatorID>C4B204A3-18D8-97E8-F056-A3593D38A35B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D9DB4C4-0CA4-8200-7EDC-BFA8C0D7FBAA" name="T_USER_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>F9C925B9-53B6-AC21-DBC5-456BB89078E2</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

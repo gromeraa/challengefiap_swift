@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFF23158-179C-459B-8AAC-37E634A02423" name="T_USER_PF">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:23:10 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_user_pf" id="85E12A9D-D621-275D-B076-E053EF6FD87D">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:40:52 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="598D43A7-5B67-DDF7-A98E-E10C6AE9025B">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:49:50 UTC</createdTime>
+<generatorID>1389668B-6934-3172-B347-520C138DB3A2</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>11A442D0-79D8-E6E4-C40B-D4D2F8553064</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf" id="65800714-E062-A526-8C8E-653286346169">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:41:14 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rg" id="B8E5B1C9-7871-130E-67D2-3A5368BCB1F7">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:41:31 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nasc" id="57A788A6-535C-5D13-6752-6348C2B71FB9">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:42:25 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_sexo" id="A6D42A40-3D0A-4770-32F6-A5DF6573E1A2">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-22 23:49:57 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33F06F98-A886-AE02-4DB1-0DB84F64930A" name="T_USER_PJ PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:41:13 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85E12A9D-D621-275D-B076-E053EF6FD87D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

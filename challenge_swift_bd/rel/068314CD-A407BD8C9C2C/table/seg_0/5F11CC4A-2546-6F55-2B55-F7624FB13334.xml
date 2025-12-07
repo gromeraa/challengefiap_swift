@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F11CC4A-2546-6F55-2B55-F7624FB13334" name="T_AUTENTICA">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>BC021C32-B583-B76F-5DC1-9BBD76F56D14</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_USER_cd_user" id="EEFA0BEA-8650-0095-E1E8-6095E38E2F37">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>0D46ACF8-9E3A-E214-D0B0-87AA660D897F</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A80E91FD-8702-9AF4-B349-CAE178297887" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="cd_autenticacao" id="477AE093-5DCA-5A7F-85B1-7149C664A362">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>BF98C77E-4760-BADC-0B0B-836EF3C827C4</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_login" id="D4433054-93E0-7A72-44B3-4458FFA9FDE5">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>ED578C40-6284-CACD-681C-B2D8A3934790</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_senha" id="BC36F229-78B0-B4DD-FEB1-DC28AE308982">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>EE0A677F-11B5-ADE8-D407-D0F4AAB0781F</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_autenticacao" id="AB33CFFA-125F-411A-560F-ACE86749A9D5">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>0C4BFA5B-63EC-5DAB-39B1-7F7D5BBC91DB</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EE8A3B3-F026-1B61-6588-6D36DDD96B6E" name="T_AUTENTICA_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>F3AADC67-7001-707B-0C5B-5C1E84F4ACD5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="477AE093-5DCA-5A7F-85B1-7149C664A362"/>
+<colUsage columnID="EEFA0BEA-8650-0095-E1E8-6095E38E2F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53D56529-80BC-F853-9E90-1C9150E7F223" name="T_AUTENTICA__IDX">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9B6DEFF6-456D-13B3-4124-E40F236394A4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EEFA0BEA-8650-0095-E1E8-6095E38E2F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB62262D-E952-2F7D-2EDA-D93962817158" name="T_AUTENTICA_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-19 00:24:35 UTC</createdTime>
+<generatorID>9B6DEFF6-456D-13B3-4124-E40F236394A4</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEFA0BEA-8650-0095-E1E8-6095E38E2F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

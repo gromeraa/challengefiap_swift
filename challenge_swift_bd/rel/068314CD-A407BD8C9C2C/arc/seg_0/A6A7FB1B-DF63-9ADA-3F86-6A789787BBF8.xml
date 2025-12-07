@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="A6A7FB1B-DF63-9ADA-3F86-6A789787BBF8" name="Arc_1">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<ownerDesignName>BD_CAP7_RM562848</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>D492257B-6693-F7BD-133E-2BDFCEA75167</table>
+<fkeys>
+<fkeyID>31B68E3B-6352-7D78-428A-6C414782742C</fkeyID>
+<fkeyID>F623976D-F523-A65C-2BF0-CF89106AC9ED</fkeyID>
+</fkeys>
+</FKArc>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EFC9F39-189F-1A37-5E3C-1AA1F675F13D" name="T_MOV_PONTOS">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>0206993F-0A99-356D-9CC4-D19B906A72B1</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_mov" id="034686AF-5789-3BC6-5479-83366536872F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>BC3A0774-89C0-B51F-6E02-818D4003F4C5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_CLUBE_T_USER_cd_user" id="22D89FEB-28D6-67A1-742E-6CC95FD0A4C8">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>8D43B408-FA56-4848-D64F-B32F23E915F3</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAA9A3B9-C9FD-C763-41E0-40B7C16E9F33" referredColumn="0B2DD271-4DB8-620C-AE6E-D36E1ED62D8C"/>
+</associations>
+</Column>
+<Column name="T_PEDIDO_cd_pedido" id="76FF99F0-6FCE-2A2C-704F-98B07C9FC857">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>1EC7442C-755E-F75B-B8BF-64D80CB8F82F</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA36EC6B-2829-60E1-EB90-9541934515E5" referredColumn="544461D0-2FF8-61BB-15AA-2DB37B6247F9"/>
+</associations>
+</Column>
+<Column name="dt_mov" id="656E29C6-6FEE-3D36-CE91-00C060BD6483">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>9F4EC6CF-00E2-DF13-BECD-2C9B981CE542</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_mov" id="AA8BC256-D199-06F4-D14D-0EED83A87230">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>F03D1856-C3F7-A1AA-1478-3E0283A0DE66</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_mov_pontos" id="4E6FD88A-EBF4-8973-2768-B65748A8BF29">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>FA7DCCE2-BC1E-EAA5-8F51-F530BF780888</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A249874D-E495-CCA3-F07E-99051DAAF13F" name="T_MOV_PONTOS_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>FDA388F2-D62B-037A-C753-16C8A1367AAD</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="034686AF-5789-3BC6-5479-83366536872F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DD48702-A5DB-92E0-DA34-51DCB073AD0D" name="T_MOV_PONTOS__IDX">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9A9D358A-96BE-296E-A0C9-4ED7F647B2C3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="76FF99F0-6FCE-2A2C-704F-98B07C9FC857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E03828A0-6069-5D9A-CA08-A1957EB755E9" name="T_MOV_PONTOS_T_CLUBE_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>DFD9736E-E2D9-F086-C095-DEC2E194415E</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22D89FEB-28D6-67A1-742E-6CC95FD0A4C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11C6F679-018C-2D61-C616-1D9083AB558D" name="T_MOV_PONTOS_T_PEDIDO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>9A9D358A-96BE-296E-A0C9-4ED7F647B2C3</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76FF99F0-6FCE-2A2C-704F-98B07C9FC857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

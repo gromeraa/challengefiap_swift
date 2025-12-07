@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift - Cubos de Músculo</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/navigation.css">
+    <link rel="stylesheet" href="../src/css/desktop-nav.css">
+    <link rel="stylesheet" href="../src/css/product-carousel.css">
+    <link rel="stylesheet" href="../src/css/product-page.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/bootstrap-overrides.css">
+    <link rel="stylesheet" href="../src/css/new-layout.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- Top Welcome Bar -->
+    <div class="welcome-bar">
+        <div class="container">
+            <div class="welcome-content d-flex align-items-center justify-content-between gap-3">
+                <span class="welcome-text">Bem-vindo à Swift!</span>
+                <span class="region-text flex-fill text-center">Preços válidos somente para essa Região</span>
+                <div class="location-info d-flex align-items-center gap-3">
+                    <span class="location">
+                        <img src="../src/img/ui/icons/location.svg" alt="Localização" class="location-icon">
+                        São Paulo - SP
+                    </span>
+                    <div class="vertical-separator"></div>
+                    <a href="#" class="shipping-link d-inline-flex align-items-center gap-2">
+                        <img src="../src/img/ui/icons/delivery.svg" alt="Frete" class="shipping-icon">
+                        Calcular Frete
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Left: Menu Button -->
+                <button class="menu-button" aria-label="Abrir menu" title="Abrir menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <!-- Center: Logo and Search -->
+                <div class="header-center">
+                    <div class="header-logo">
+                        <a href="../index.html">
+                            <img src="../src/img/logo/logo swift laranja.png" alt="Swift">
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <img src="../src/img/ui/icons/search.svg" alt="Buscar" class="search-icon">
+                        <input type="text" placeholder="Buscar" aria-label="Buscar produtos">
+                    </div>
+                </div>
+
+                <!-- Right: Actions -->
+                <div class="header-right">
+                    <div class="header-actions">
+                        <a href="#" class="promotions-link">
+                            <img src="../src/img/ui/icons/discount.svg" alt="Promoções" class="promotions-icon">
+                            Promoções</a>
+                        <div class="vertical-separator"></div>
+                        <a href="./user.html" class="login-link">
+                            <img src="../src/img/ui/icons/user.svg" alt="Usuário" class="user-icon">
+                            Cadastro/Entrar
+                        </a>
+                        <div class="vertical-separator"></div>
+                        <a href="./shopping-cart.html" class="cart-link">
+                            <img src="../src/img/ui/icons/buy.svg" alt="Carrinho" class="cart-icon">
+                            <span>Carrinho</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <nav class="mobile-nav">
+        <div class="nav-header">
+            <span>MENU</span>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="my-purchases">
+            <div class="my-purchases-info">
+                <i class="fas fa-lock"></i>
+                <span>MINHAS COMPRAS</span>
+            </div>
+            <a href="./user.html" class="login-button">LOGIN</a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-item category-title">
+                <a href="#">
+                    <i class="fas fa-store"></i>
+                    <span>CATEGORIAS</span>
+                </a>
+            </li>
+            <li class="nav-list-item"><a href="#"><span>PRONTOS PARA COMER</span><i
+                        class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>BOVINOS</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>AVES</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>PEIXARIA</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>SUÍNOS</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>CHURRASCO</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>LINGUIÇAS</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>CORTES ESPECIAIS</span><i class="fas fa-chevron-right"></i></a>
+            </li>
+            <li class="nav-list-item"><a href="#"><span>FRUTAS E VEGETAIS</span><i class="fas fa-chevron-right"></i></a>
+            </li>
+            <li class="nav-list-item"><a href="#"><span>100% VEGETAL</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>SNACKS</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>MERCEARIA</span><i class="fas fa-chevron-right"></i></a></li>
+            <li class="nav-list-item"><a href="#"><span>PADARIA</span><i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div class="container">
+            <ul class="desktop-nav-list">
+                <li class="desktop-nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Bovinos <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Alcatra</a></li>
+                        <li><a class="dropdown-item" href="#">Picanha</a></li>
+                        <li><a class="dropdown-item" href="#">Filé Mignon</a></li>
+                        <li><a class="dropdown-item" href="#">Costela</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Aves <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Frango Inteiro</a></li>
+                        <li><a class="dropdown-item" href="#">Coxa e Sobrecoxa</a></li>
+                        <li><a class="dropdown-item" href="#">Peito de Frango</a></li>
+                        <li><a class="dropdown-item" href="#">Asa de Frango</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Pronto para Comer <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown"
+                            class="dropdown-arrow">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pratos Prontos</a></li>
+                        <li><a class="dropdown-item" href="#">Lanches</a></li>
+                        <li><a class="dropdown-item" href="#">Massas</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Peixes <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Peixes Frescos</a></li>
+                        <li><a class="dropdown-item" href="#">Frutos do Mar</a></li>
+                        <li><a class="dropdown-item" href="#">Camarão</a></li>
+                        <li><a class="dropdown-item" href="#">Salmão</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Suínos <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pernil</a></li>
+                        <li><a class="dropdown-item" href="#">Costelinha</a></li>
+                        <li><a class="dropdown-item" href="#">Lombo</a></li>
+                        <li><a class="dropdown-item" href="#">Filé Suíno</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-nav-item">
+                    <a href="#">Churrasco</a>
+                </li>
+                <li class="desktop-nav-item">
+                    <a href="#">Linguiças</a>
+                </li>
+                <li class="desktop-nav-item">
+                    <a href="#">Frutas e Vegetais</a>
+                </li>
+                <li class="desktop-nav-item">
+                    <a href="#">Snacks</a>
+                </li>
+                <li class="desktop-nav-item">
+                    <a href="#">Variados</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="product-page container">
+        <div class="row gx-4 gy-4">
+            <!-- Coluna principal -->
+            <div class="col-12 col-xl-9 order-1 order-xl-1">
+                <nav aria-label="breadcrumb" class="product-breadcrumb mb-3">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="../index.html">SWIFT</a></li>
+                        <li class="breadcrumb-item"><a href="#">BOVINOS</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">MÚSCULOS</li>
+                    </ol>
+                </nav>
+
+                <!-- Cabeçalho do produto -->
+                <section class="product-main-content mb-4">
+                    <div class="row gy-4 align-items-start">
+                        <div class="col-12 col-md-6">
+                            <img src="../src/img/products/carne-moida.png" alt="Cubos de Músculos Swift 500g"
+                                class="img-fluid rounded">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1 class="fs-4 fs-md-2 fw-semibold mb-2">CUBOS DE MÚSCULOS SWIFT 500g</h1>
+                            <p class="fs-1 fw-bold text-primary mb-1">R$ 18,90</p>
+                            <p class="text-muted small mb-3">preço por embalagem de 500g</p>
+                            <button class="btn btn-primary btn-lg w-100 d-md-inline-block rounded-pill">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conservação / Validade -->
+                <section class="mb-4">
+                    <div class="card">
+                        <div class="row g-0 text-center">
+                            <div class="col-6 bg-light fw-semibold py-2 border-end">CONSERVAÇÃO</div>
+                            <div class="col-6 bg-light fw-semibold py-2">VALIDADE</div>
+                            <div class="col-6 py-2 border-end">Freezer / Geladeira</div>
+                            <div class="col-6 py-2">Até 12 meses</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Receita -->
+                <section class="mb-4">
+                    <div class="card">
+                        <div class="row g-3 g-md-4 align-items-center justify-content-center p-3 p-md-4">
+                            <div class="col-12 col-md-5 text-center text-md-start">
+                                <img src="../src/img/products/grand-gateau.png"
+                                    alt="Receita de Cubos de Músculo com Pimentão e Cebolinha"
+                                    class="img-fluid rounded d-block mx-auto mx-md-0">
+                            </div>
+                            <div class="col-12 col-md-7 text-center text-md-start">
+                                <span class="badge bg-light text-dark fw-semibold mb-2">RECEITA</span>
+                                <h3 class="h6 h5-md fw-semibold mb-2">RECEITA DE CUBOS DE MÚSCULO COM PIMENTÃO E
+                                    CEBOLINHA</h3>
+                                <p class="text-muted mb-1">TEMPO - 45 min</p>
+                                <p class="text-muted mb-0">RENDIMENTO - 4 porções</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modo de preparo -->
+                <section class="mb-5">
+                    <h2 class="h6 fw-semibold mb-3">MODO DE PREPARO</h2>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="position-relative video-thumb">
+                            <img src="../src/img/products/sassami.png" alt="Thumb do vídeo de preparo"
+                                class="img-fluid rounded">
+                            <button
+                                class="btn btn-light rounded-circle position-absolute top-50 start-50 translate-middle"
+                                aria-label="Reproduzir vídeo" title="Reproduzir vídeo">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="small">
+                            <p class="mb-2">1. Adicionar aos poucos em uma panela bem aquecida.</p>
+                            <p class="mb-2">2. Virar conforme ficarem...</p>
+                            <a href="#" class="link-primary fw-semibold">Leia mais</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Produtos Relacionados -->
+                <section class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="h5 m-0">Produtos Relacionados</h2>
+                        <a href="#" class="link-secondary small">Ver mais ></a>
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../src/img/products/carne-moida.png" class="card-img-top"
+                                    alt="Carne Moída Swift 1kg">
+                                <div class="card-body p-2">
+                                    <h3 class="card-title fs-6 mb-1">Carne Moída Swift 1kg</h3>
+                                    <div class="fw-bold text-primary">R$ 32,90</div>
+                                    <button class="btn btn-outline-primary btn-sm w-100 mt-2">
+                                        <img src="../src/img/ui/icons/buy.svg" alt="" width="16" class="me-1">Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../src/img/products/sassami.png" class="card-img-top" alt="Frango Sassami">
+                                <div class="card-body p-2">
+                                    <h3 class="card-title fs-6 mb-1">Frango Sassami</h3>
+                                    <div class="fw-bold text-primary">R$ 28,90</div>
+                                    <button class="btn btn-outline-primary btn-sm w-100 mt-2">
+                                        <img src="../src/img/ui/icons/buy.svg" alt="" width="16" class="me-1">Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../src/img/products/tilapia.png" class="card-img-top" alt="Filé de Tilápia">
+                                <div class="card-body p-2">
+                                    <h3 class="card-title fs-6 mb-1">Filé de Tilápia</h3>
+                                    <div class="fw-bold text-primary">R$ 24,90</div>
+                                    <button class="btn btn-outline-primary btn-sm w-100 mt-2">
+                                        <img src="../src/img/ui/icons/buy.svg" alt="" width="16" class="me-1">Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../src/img/products/petit-gateau.png" class="card-img-top" alt="Petit Gateau">
+                                <div class="card-body p-2">
+                                    <h3 class="card-title fs-6 mb-1">Petit Gateau</h3>
+                                    <div class="fw-bold text-primary">R$ 15,90</div>
+                                    <button class="btn btn-outline-primary btn-sm w-100 mt-2">
+                                        <img src="../src/img/ui/icons/buy.svg" alt="" width="16" class="me-1">Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Painel lateral -->
+            <aside class="col-12 col-xl-3 order-2 order-xl-2 sticky-xl header-offset"
+                aria-label="Informações importantes do produto">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="h6 fw-bold mb-3">IMPORTANTE</h2>
+                        <span class="badge bg-light text-dark fw-semibold">NÃO CONTÉM GLÚTEN</span>
+                        <div class="mt-3">
+                            <h3 class="h6 fw-bold mb-1">INGREDIENTES</h3>
+                            <p class="mb-3">Carne configurada de bovino sem osso – músculo. Ingredientes: 100% carne
+                                bovina.</p>
+                        </div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-2">INFORMAÇÃO NUTRICIONAL</h3>
+                            <div class="table-responsive">
+                                <table class="table table-sm align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Porção (100 g)</th>
+                                            <th>Qtd</th>
+                                            <th>%VD</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Valor energético</td>
+                                            <td>250 kcal</td>
+                                            <td>12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carboidratos</td>
+                                            <td>0 g</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Proteínas</td>
+                                            <td>26 g</td>
+                                            <td>35%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gorduras totais</td>
+                                            <td>17 g</td>
+                                            <td>31%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sódio</td>
+                                            <td>73 mg</td>
+                                            <td>3%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Swift Fale conosco -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo/logo swift laranja.png" alt="Swift">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp: (11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Televendas: (11) 3333-3333</span>
+                        </div>
+                    </div>
+                    <div class="app-download">
+                        <p>Baixe o nosso App</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="../src/img/ui/buttons/downloadappstore.png" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="../src/img/ui/buttons/downloadgoogleplay.png" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swift Resolve -->
+                <div class="footer-column">
+                    <h3>Swift Resolve</h3>
+                    <div class="resolve-options">
+                        <div class="resolve-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Chat Online</span>
+                        </div>
+                        <div class="resolve-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Telefone: Seg a Sex 8h às 18h</span>
+                        </div>
+                        <div class="resolve-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: contato@swift.com.br</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- + SWIFT -->
+                <div class="footer-column">
+                    <h3>+ SWIFT</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">A nossa história</a></li>
+                        <li><a href="#">Encontre nossas lojas</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Dúvidas frequentes</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swift Corporativo - 02.914.460/0382-04. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Links JS -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/carousel/product-carousel.js"></script>
+    <script src="../src/js/dropdown.js"></script>
+    <script src="../src/js/product-page.js"></script>
+</body>
+
+</html>

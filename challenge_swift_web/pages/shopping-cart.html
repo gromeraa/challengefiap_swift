@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Swift</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900 display=swap" rel="stylesheet">
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/navigation.css">
+    <link rel="stylesheet" href="../src/css/desktop-nav.css">
+    <link rel="stylesheet" href="../src/css/new-layout.css">
+    <link rel="stylesheet" href="../src/css/bootstrap-overrides.css">
+    <link rel="stylesheet" href="../src/css/shopping-cart-new.css">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Top Welcome Bar -->
+<div class="welcome-bar">
+    <div class="container">
+        <div class="welcome-content" style="display: flex; align-items: center; justify-content: space-between;">
+            <span class="welcome-text">Bem-vindo à Swift!</span>
+            <span class="region-text" style="flex: 1; text-align: center;">Preços válidos somente para essa Região</span>
+            <div class="location-info" style="display: flex; align-items: center; gap: 0 12px;">
+                <span class="location">
+                    <img src="../src/img/ui/icons/location.svg" alt="Localização" class="location-icon">
+                    São Paulo - SP
+                </span>
+                <div class="vertical-separator"></div>
+                <a href="#" class="shipping-link">
+                    <img src="../src/img/ui/icons/delivery.svg" alt="Frete" class="shipping-icon">
+                    Calcular Frete
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Header -->
+<header class="main-header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Left: Menu Button -->
+            <button class="menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Center: Logo and Search -->
+            <div class="header-center">
+                <div class="header-logo">
+                    <a href="../index.html">
+                        <img src="../src/img/logo/logo swift laranja.png" alt="Swift">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <img src="../src/img/ui/icons/search.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Buscar">
+                </div>
+            </div>
+            
+            <!-- Right: Actions -->
+            <div class="header-right">
+                <div class="header-actions">
+                    <a href="#" class="promotions-link">
+                        <img src="../src/img/ui/icons/discount.svg" alt="Promoções" class="promotions-icon">
+                        Promoções</a>
+                    <div class="vertical-separator"></div>
+                    <a href="./user.html" class="login-link">
+                        <img src="../src/img/ui/icons/user.svg" alt="Usuário" class="user-icon">
+                        Cadastro/Entrar
+                    </a>
+                    <div class="vertical-separator"></div>
+                    <a href="./pages/shopping-cart.html" class="cart-link">
+                        <img src="../src/img/ui/icons/buy.svg" alt="Carrinho" class="cart-icon">
+                        <span>Carrinho</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<div class="nav-overlay"></div>
+
+<nav class="mobile-nav">
+    <div class="nav-header">
+        <span>MENU</span>
+        <button class="close-button">&times;</button>
+    </div>
+    <div class="my-purchases">
+        <div class="my-purchases-info">
+            <i class="fas fa-lock"></i>
+            <span>MINHAS COMPRAS</span>
+        </div>
+        <a href="/user.html" class="login-button">LOGIN</a>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-list-item category-title">
+            <a href="#">
+                <i class="fas fa-store"></i>
+                <span>CATEGORIAS</span>
+            </a>
+        </li>
+        <li class="nav-list-item"><a href="#"><span>PRONTOS PARA COMER</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>BOVINOS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>AVES</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>PEIXARIA</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>SUÍNOS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>CHURRASCO</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>LINGUIÇAS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>CORTES ESPECIAIS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>FRUTAS E VEGETAIS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>100% VEGETAL</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>SNACKS</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>MERCEARIA</span><i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-list-item"><a href="#"><span>PADARIA</span><i class="fas fa-chevron-right"></i></a></li>
+    </ul>
+</nav>
+
+<!-- Desktop Navigation -->
+<nav class="desktop-nav">
+    <div class="container">
+        <ul class="desktop-nav-list">
+            <li class="desktop-nav-item dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Bovinos <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Alcatra</a></li>
+                    <li><a class="dropdown-item" href="#">Picanha</a></li>
+                    <li><a class="dropdown-item" href="#">Filé Mignon</a></li>
+                    <li><a class="dropdown-item" href="#">Costela</a></li>
+                    </ul>
+            </li>
+            <li class="desktop-nav-item dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Aves <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Frango Inteiro</a></li>
+                    <li><a class="dropdown-item" href="#">Coxa e Sobrecoxa</a></li>
+                    <li><a class="dropdown-item" href="#">Peito de Frango</a></li>
+                    <li><a class="dropdown-item" href="#">Asa de Frango</a></li>
+                    </ul>
+            </li>
+            <li class="desktop-nav-item dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Pronto para Comer <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pratos Prontos</a></li>
+                    <li><a class="dropdown-item" href="#">Lanches</a></li>
+                    <li><a class="dropdown-item" href="#">Massas</a></li>
+                    </ul>
+            </li>
+            <li class="desktop-nav-item dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Peixes <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Peixes Frescos</a></li>
+                    <li><a class="dropdown-item" href="#">Frutos do Mar</a></li>
+                    <li><a class="dropdown-item" href="#">Camarão</a></li>
+                    <li><a class="dropdown-item" href="#">Salmão</a></li>
+                    </ul>
+            </li>
+            <li class="desktop-nav-item dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Suínos <img src="../src/img/ui/icons/arrow-down.svg" alt="Dropdown" class="dropdown-arrow">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pernil</a></li>
+                    <li><a class="dropdown-item" href="#">Costelinha</a></li>
+                    <li><a class="dropdown-item" href="#">Lombo</a></li>
+                    <li><a class="dropdown-item" href="#">Filé Suíno</a></li>
+                    </ul>
+            </li>
+            <li class="desktop-nav-item">
+                <a href="#">Churrasco</a>
+            </li>
+            <li class="desktop-nav-item">
+                <a href="#">Linguiças</a>
+            </li>
+            <li class="desktop-nav-item">
+                <a href="#">Frutas e Vegetais</a>
+            </li>
+            <li class="desktop-nav-item">
+                <a href="#">Snacks</a>
+            </li>
+            <li class="desktop-nav-item">
+                <a href="#">Variados</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <!-- Shopping Cart Content -->
+    <main class="shopping-cart-main">
+        <div class="container">
+            <div class="cart-header">
+                <h1>Meu Carrinho</h1>
+                <div class="cart-summary">
+                    <span class="item-count">3 itens</span>
+                    <span class="total-price">R$ 89,70</span>
+                </div>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../src/img/products/carne-moida.png" alt="Carne Moída Swift 1kg" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <h3>Carne Moída Swift 1kg</h3>
+                            <div class="item-price">
+                                <span class="current-price">R$ 32,90</span>
+                                <span class="old-price">R$ 49,90</span>
+                                <span class="discount">-34%</span>
+                            </div>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">
+                            <span class="total">R$ 32,90</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../src/img/products/sassami.png" alt="Frango Sassami" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <h3>Frango Sassami</h3>
+                            <div class="item-price">
+                                <span class="current-price">R$ 28,90</span>
+                                <span class="old-price">R$ 46,90</span>
+                                <span class="discount">-38%</span>
+                            </div>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus">-</button>
+                                <span class="quantity">2</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">
+                            <span class="total">R$ 57,80</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../src/img/products/tilapia.png" alt="Filé de Tilápia" class="product-image">
+                        </div>
+                        <div class="item-details">
+                            <h3>Filé de Tilápia</h3>
+                            <div class="item-price">
+                                <span class="current-price">R$ 24,90</span>
+                                <span class="old-price">R$ 33,90</span>
+                                <span class="discount">-25%</span>
+                            </div>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">
+                            <span class="total">R$ 24,90</span>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-sidebar">
+                    <!-- Select Club Premium Membership -->
+                    <div class="premium-membership">
+                        <div class="membership-header">
+                            <img src="../src/img/ui/icons/discount.svg" alt="Desconto" class="membership-icon">
+                            <a href="../pages/club-login.html"><h3>Select Club</h3></a>
+                        </div>
+                        <div class="membership-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-text">5% de desconto em todas as compras</span>
+                                <span class="benefit-value">-R$ 4,49</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-text">Frete grátis a partir de R$ 50</span>
+                                <span class="benefit-value">-R$ 15,00</span>
+                            </div>
+                        </div>
+                        <button class="membership-btn">Assinar Select Club</button>
+                    </div>
+
+                    <!-- Discount Coupon -->
+                    <div class="discount-coupon">
+                        <h3>Cupom de Desconto</h3>
+                        <div class="coupon-input">
+                            <input type="text" placeholder="Digite seu cupom" class="coupon-field">
+                            <button class="apply-coupon-btn">Aplicar</button>
+                        </div>
+                        <div class="applied-coupons">
+                            <div class="applied-coupon">
+                                <span class="coupon-code">BEMVINDO10</span>
+                                <span class="coupon-discount">-R$ 10,00</span>
+                                <button class="remove-coupon-btn">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h3>Resumo do Pedido</h3>
+                        <div class="summary-line">
+                            <span>Subtotal (3 itens)</span>
+                            <span>R$ 115,60</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Desconto Select Club</span>
+                            <span class="discount-value">-R$ 4,49</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Cupom BEMVINDO10</span>
+                            <span class="discount-value">-R$ 10,00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Frete</span>
+                            <span class="shipping-value">Grátis</span>
+                        </div>
+                        <div class="summary-line total-line">
+                            <span>Total</span>
+                            <span class="final-total">R$ 101,11</span>
+                        </div>
+                        <div class="savings-info">
+                            <span>Você economizou R$ 29,49!</span>
+                        </div>
+                        <button class="checkout-btn">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Swift Fale conosco -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo/logo swift laranja.png" alt="Swift">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp: (11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Televendas: (11) 3333-3333</span>
+                        </div>
+                    </div>
+                    <div class="app-download">
+                        <p>Baixe o nosso App</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="../src/img/ui/buttons/downloadappstore.png" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="../src/img/ui/buttons/downloadgoogleplay.png" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swift Resolve -->
+                <div class="footer-column">
+                    <h3>Swift Resolve</h3>
+                    <div class="resolve-options">
+                        <div class="resolve-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Chat Online</span>
+                        </div>
+                        <div class="resolve-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Telefone</span>
+                        </div>
+                        <div class="resolve-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>E-mail</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- + SWIFT -->
+                <div class="footer-column">
+                    <h3>+ SWIFT</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">A nossa história</a></li>
+                        <li><a href="#">Encontre nossas lojas</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Swift. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Links JS -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/dropdown.js"></script>
+    <script src="../src/js/shopping-cart.js"></script>
+    
+</body>
+
+</html>

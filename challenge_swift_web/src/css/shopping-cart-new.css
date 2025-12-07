@@ -1,0 +1,539 @@
+/* Shopping Cart Styles */
+.shopping-cart-main {
+    background: white;
+    padding: 40px 0;
+    min-height: 60vh;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.cart-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.cart-summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-count {
+    font-size: 16px;
+    color: #666;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--orange-swift-base);
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+}
+
+/* Cart Items */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.item-image {
+    flex-shrink: 0;
+}
+
+.item-image .product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--orange-swift-base);
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount {
+    background: var(--orange-swift-base);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.qty-btn:hover {
+    background: var(--orange-swift-base);
+    color: white;
+    border-color: var(--orange-swift-base);
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+.item-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.item-total .total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Premium Membership */
+.premium-membership {
+    background: linear-gradient(135deg, var(--orange-swift-base) 0%, #ff6b35 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.membership-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.membership-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.membership-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.membership-benefits {
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.benefit-item:last-child {
+    border-bottom: none;
+}
+
+.benefit-text {
+    font-size: 14px;
+}
+
+.benefit-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.membership-btn {
+    width: 100%;
+    background: white;
+    color: var(--orange-swift-base);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.membership-btn:hover {
+    background: #f8f9fa;
+}
+
+/* Discount Coupon */
+.discount-coupon {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.discount-coupon h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.coupon-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.coupon-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.apply-coupon-btn {
+    background: var(--orange-swift-base);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.apply-coupon-btn:hover {
+    background: #b8371f;
+}
+
+.applied-coupons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.applied-coupon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8f5e8;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #28a745;
+}
+
+.coupon-code {
+    font-weight: 600;
+    color: #28a745;
+}
+
+.coupon-discount {
+    font-weight: 600;
+    color: #28a745;
+}
+
+.remove-coupon-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Order Summary */
+.order-summary {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.order-summary h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.summary-line:last-child {
+    border-bottom: none;
+}
+
+.discount-value {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.shipping-value {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.total-line {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding-top: 15px;
+    border-top: 2px solid #f8f9fa;
+    margin-top: 10px;
+}
+
+.final-total {
+    color: var(--orange-swift-base);
+}
+
+.savings-info {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #e8f5e8;
+    border-radius: 6px;
+    color: #28a745;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background: var(--orange-swift-base);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.checkout-btn:hover {
+    background: #b8371f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .cart-sidebar {
+        order: -1;
+    }
+    
+    .cart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .item-total {
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .coupon-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .apply-coupon-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopping-cart-main {
+        padding: 20px 0;
+    }
+    
+    .cart-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cart-item {
+        padding: 15px;
+    }
+    
+    .item-image .product-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .item-details h3 {
+        font-size: 14px;
+    }
+    
+    .current-price {
+        font-size: 16px;
+    }
+    
+    .old-price {
+        font-size: 12px;
+    }
+    
+    .discount {
+        font-size: 10px;
+        padding: 1px 6px;
+    }
+    
+    .qty-btn {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .quantity {
+        font-size: 14px;
+    }
+    
+    .premium-membership {
+        padding: 15px;
+    }
+    
+    .membership-header h3 {
+        font-size: 16px;
+    }
+    
+    .discount-coupon {
+        padding: 15px;
+    }
+    
+    .discount-coupon h3 {
+        font-size: 16px;
+    }
+    
+    .order-summary {
+        padding: 15px;
+    }
+    
+    .order-summary h3 {
+        font-size: 16px;
+    }
+    
+    .summary-line {
+        font-size: 14px;
+    }
+    
+    .total-line {
+        font-size: 16px;
+    }
+}
+
+    .membership-header a {
+    color: inherit; /* Herda a cor do elemento pai (branco) */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: opacity 0.2s ease; /* Efeito suave ao passar o mouse */
+}
+
+    .membership-header a:hover {
+    opacity: 0.85; /* Deixa o link um pouco transparente no hover */
+}

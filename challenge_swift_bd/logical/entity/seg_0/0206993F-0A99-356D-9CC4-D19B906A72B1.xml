@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0206993F-0A99-356D-9CC4-D19B906A72B1" name="T_MOV_PONTOS">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:01:21 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_mov" id="BC3A0774-89C0-B51F-6E02-818D4003F4C5">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:01:47 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="8D43B408-FA56-4848-D64F-B32F23E915F3">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:06:08 UTC</createdTime>
+<generatorID>DFD9736E-E2D9-F086-C095-DEC2E194415E</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>BE5A293E-6AAC-0E7B-97F9-C034A1D70DA3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_pedido" id="1EC7442C-755E-F75B-B8BF-64D80CB8F82F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:09:59 UTC</createdTime>
+<generatorID>9A9D358A-96BE-296E-A0C9-4ED7F647B2C3</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>43EB1DA5-D38A-E2BB-7BA6-FEAAE4B2FCC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_mov" id="9F4EC6CF-00E2-DF13-BECD-2C9B981CE542">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:02:25 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_mov" id="F03D1856-C3F7-A1AA-1478-3E0283A0DE66">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:02:48 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_mov_pontos" id="FA7DCCE2-BC1E-EAA5-8F51-F530BF780888">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:03:12 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FDA388F2-D62B-037A-C753-16C8A1367AAD" name="T_MOV_PONTOS PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 00:01:56 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC3A0774-89C0-B51F-6E02-818D4003F4C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

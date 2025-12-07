@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="D3A95B29-4C9C-C9AA-C864-1ED9D4685255">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:27:10 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<sourcePk>F9C925B9-53B6-AC21-DBC5-456BB89078E2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>821F13B6-8A6D-9F3C-F138-51FD8B2C9E2B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1C7E0652-352E-234B-1E90-15D16349EAFB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

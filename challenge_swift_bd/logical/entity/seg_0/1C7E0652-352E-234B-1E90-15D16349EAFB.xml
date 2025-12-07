@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C7E0652-352E-234B-1E90-15D16349EAFB" name="T_TELEFONE">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:19:09 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_telefone" id="7E95CBAC-F0A7-4D66-E30E-5545009E4D1A">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:24:11 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="67D11846-1F1C-ABD1-DF96-0B3BA42014BE">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:27:10 UTC</createdTime>
+<generatorID>D3A95B29-4C9C-C9AA-C864-1ED9D4685255</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>11A442D0-79D8-E6E4-C40B-D4D2F8553064</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_tipo_telefone" id="1154B735-1D1D-4EB0-4AED-74545BD29942">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:26:04 UTC</createdTime>
+<generatorID>D5F94D92-D81A-0593-6EA9-3F2CAB8506E7</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<referedAttribute>EF59D7E9-712F-AEE8-7BEF-17013CB4EAB2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="58F8FF23-B8B0-FF8A-34FA-F92482AD3CD9">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:24:48 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_ddd" id="D1F86FC1-AF10-9E36-741F-7DA8AD3AABD6">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:25:36 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="455BE448-84B3-0D0B-8D39-9383DD933A52" name="T_TELEFONE PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:24:41 UTC</createdTime>
+<ownerDesignName>swift_bd</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7E95CBAC-F0A7-4D66-E30E-5545009E4D1A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

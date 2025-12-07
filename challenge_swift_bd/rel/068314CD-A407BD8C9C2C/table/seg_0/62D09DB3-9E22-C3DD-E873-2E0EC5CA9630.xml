@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62D09DB3-9E22-C3DD-E873-2E0EC5CA9630" name="T_ENDERECO">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>9097EE91-811E-E69B-21CC-882E916B97FE</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_USER_cd_user" id="3CF32892-6519-BC94-9482-C527CE1B434C">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>709F141B-AA45-1FDF-7455-961200FE8302</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80BF56DD-D51D-4FEF-E1C4-F0F94A6E09CD" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="cd_endereco" id="87ADD56B-EB9B-A0DF-291F-D9941BFB5F07">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>787C1D67-4D0D-1381-D35F-D5EF47D929A8</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_BAIRRO_cd_bairro" id="E84A3578-5DD9-222C-4CB1-1C0F3390382C">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>369ECB1B-2A5F-52A1-78DF-CA260B35266D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2C9314F-CA7A-EB3C-136D-542F64476E95" referredColumn="949A88ED-994E-080B-C783-0E418BC4FC45"/>
+</associations>
+</Column>
+<Column name="nr_cep" id="82179A66-DBB2-6393-4AF3-AF7F35E9040A">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>6F95ECB7-16EB-1DFA-9601-2A99FC1D039D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_rua" id="493F2496-52EF-9080-4DFA-CB39BAE3AB07">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:39:15 UTC</createdTime>
+<generatorID>7AA655E1-6390-3E3A-198B-3C0AC2D94EDB</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_casa" id="F4D09B29-FB52-2298-DF81-64613B724EC0">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:39:15 UTC</createdTime>
+<generatorID>B8BF6270-0403-72B6-1F6E-A588FD6C01D8</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_complemento" id="536CF77D-F458-10FD-BAF7-781413130C8E">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-15 00:39:15 UTC</createdTime>
+<generatorID>A8D2257F-1DA0-5DE4-CF46-91BFFA4D5DF1</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59D2CBFC-67BF-F917-0BAB-2D9554B56400" name="T_ENDERECO_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>4500012E-A833-21D7-EFDE-D1EDBD60C88B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87ADD56B-EB9B-A0DF-291F-D9941BFB5F07"/>
+<colUsage columnID="3CF32892-6519-BC94-9482-C527CE1B434C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF17E699-7A57-5034-C1D1-E98A65CC96CA" name="T_ENDERECO_T_BAIRRO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>09A3B0AC-B969-A136-95A9-E06F475EE05B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E84A3578-5DD9-222C-4CB1-1C0F3390382C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="455E6A31-E694-A316-3274-6FAF045EB4CE" name="T_ENDERECO_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>9FCCD55D-2308-CA03-BDB7-E854E531A276</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CF32892-6519-BC94-9482-C527CE1B434C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

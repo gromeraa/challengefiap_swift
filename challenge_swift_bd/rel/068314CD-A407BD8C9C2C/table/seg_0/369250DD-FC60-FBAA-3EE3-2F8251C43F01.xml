@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="369250DD-FC60-FBAA-3EE3-2F8251C43F01" name="T_CLUBE">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-21 23:36:23 UTC</createdTime>
+<generatorID>AEFD84D6-16DC-5824-A3A7-E589FC2EDC0E</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_USER_cd_user" id="0B2DD271-4DB8-620C-AE6E-D36E1ED62D8C">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>BE5A293E-6AAC-0E7B-97F9-C034A1D70DA3</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6BDA9C9-8052-9ED2-6E25-4A90EEF982D1" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="qt_pontos" id="0A56A53D-206F-E815-BF6C-6D0136A1DBFD">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>7C2D045F-A486-0CF9-BFBD-3DA987A78F45</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_cadastro_clube" id="03E2DD46-B425-5EB8-6E10-778BEB243A17">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>22A4D9A3-564A-42DB-89B9-4BC8DB87C2F5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_ultima_atu" id="8735E3A5-AD6C-F43A-73A3-AF6EE1CBB59C">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>9530CB3D-6EE2-2FCC-E103-E897D95C7CFD</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E80530C-5124-56E2-097C-DB1002BD8188" name="T_CLUBE_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>FF224581-126C-AF97-5E23-E8C4F39F4763</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B2DD271-4DB8-620C-AE6E-D36E1ED62D8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44174CE4-58ED-858B-3A5F-F3D956E2CA6D" name="T_CLUBE_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>A0A98E36-6829-68FF-777A-B58E86C876A7</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B2DD271-4DB8-620C-AE6E-D36E1ED62D8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

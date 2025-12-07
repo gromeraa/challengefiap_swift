@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="E609D3F9-2D20-283E-CC8E-794D83D92E2C" name="Arc_1">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 01:50:03 UTC</createdTime>
+<ownerDesignName>BD_CAP7_RM562848</ownerDesignName>
+<engineerTo>
+<item key="068314CD-0C36-4F7D-4081-A407BD8C9C2C" value="true"/>
+</engineerTo>
+<entity>821F13B6-8A6D-9F3C-F138-51FD8B2C9E2B</entity>
+<relations>
+<relationID>1389668B-6934-3172-B347-520C138DB3A2</relationID>
+<relationID>E3F60323-0172-8B8C-D0B5-BE67C8DAE258</relationID>
+</relations>
+</Arc>

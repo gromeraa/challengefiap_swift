@@ -1,0 +1,80 @@
+
+.btn, .form-control, .navbar, .card {
+    font-family: var(--font-primary, 'Inter', sans-serif) !important;
+}
+
+:root {
+    --bs-primary: var(--orange-swift-base);
+    --bs-secondary: var(--dark-swift-base);
+}
+
+.swift-bg-primary {
+    background-color: var(--orange-swift-base) !important;
+}
+
+.swift-text-primary {
+    color: var(--orange-swift-base) !important;
+}
+
+.swift-border-primary {
+    border-color: var(--orange-swift-base) !important;
+}
+@media (max-width: 480px) {
+    .swift-d-none-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .swift-d-none-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .swift-d-none-desktop {
+        display: none !important;
+    }
+}
+
+/* Custom dropdown styles for desktop navigation */
+.desktop-nav .dropdown-menu {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    margin-top: 8px;
+    min-width: 200px;
+}
+
+.desktop-nav .dropdown-item {
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.desktop-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--orange-swift-base);
+}
+
+.desktop-nav .dropdown-item i {
+    color: var(--orange-swift-base);
+    width: 16px;
+    text-align: center;
+}
+
+.desktop-nav .dropdown-toggle::after {
+    display: none !important;
+}
+
+.desktop-nav .dropdown-toggle {
+    position: relative;
+}
+
+/* Removed duplicate arrow - using SVG icon instead */

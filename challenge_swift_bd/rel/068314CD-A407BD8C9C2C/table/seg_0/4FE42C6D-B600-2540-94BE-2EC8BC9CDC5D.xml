@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FE42C6D-B600-2540-94BE-2EC8BC9CDC5D" name="T_ITENS_PEDIDO">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-21 23:36:23 UTC</createdTime>
+<generatorID>C9BCF397-5334-CE58-4391-B5357624EED4</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_PEDIDO_cd_pedido" id="8C7476EB-C90A-B668-C137-8C9D6860B80E">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>CEBC816B-0B8C-2C61-8152-64B9C522CE9B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="362D7B07-1F5E-2BED-CCA1-74C8C6037F40" referredColumn="544461D0-2FF8-61BB-15AA-2DB37B6247F9"/>
+</associations>
+</Column>
+<Column name="T_ITENS_cd_item" id="37A1B9D0-6E28-28D3-710B-07B7A5F1EB82">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>4BF45ABA-F575-31B3-3BF7-49FCC9B11A97</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9AE2849-05CE-ED83-D6DE-2A3FC1F14BCF" referredColumn="77352F23-B783-9080-79BB-7FFA75C318B7"/>
+</associations>
+</Column>
+<Column name="qt_item" id="712C352C-ACB3-3ACA-6C13-DF0F52ACE3F1">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>126F2887-EE6A-993F-94AF-072E5A9392F5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_unt_item" id="749BC0E6-EAE7-4AC7-A193-6A0301B2BA3F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>478B2EDF-B253-B26F-5BDB-398CAA4EE372</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="457B37F6-8421-1A17-1D75-07A4D5B271F5" name="T_ITENS_PEDIDO_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>AF4BA69B-F5C6-F5AB-2E92-0F5B46A95017</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C7476EB-C90A-B668-C137-8C9D6860B80E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00539B8C-AE9D-3127-6906-0610867F5307" name="T_ITENS_PEDIDO_T_PEDIDO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>72D4D675-C7CE-E7C3-1F7E-62A44B35AD76</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C7476EB-C90A-B668-C137-8C9D6860B80E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F02E227-4CD7-688D-A5E7-CDA0D93F5A4A" name="T_ITENS_PEDIDO_T_ITENS_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>85475C55-AE60-76EF-545F-B3E1302A0C5C</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37A1B9D0-6E28-28D3-710B-07B7A5F1EB82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

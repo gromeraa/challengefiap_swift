@@ -1,0 +1,331 @@
+/* Mobile Registration/Login Page - Clean & Responsive */
+
+.mobile-registration {
+    background: linear-gradient(135deg, #D54205 0%, #dc4405 100%);
+    font-family: var(--font-primary);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.user-form-container {
+    max-width: 370px;
+    width: 100%;
+    margin: 0;
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.user-form-logo {
+    width: 160px;
+    margin-bottom: 16px;
+}
+
+.user-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--dark);
+    text-align: center;
+}
+
+/* Form Styles */
+.user-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.user-form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.user-form-group label {
+    position: absolute;
+    left: 16px;
+    top: -10px;
+    background-color: var(--white);
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.user-form-group .input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user-form-group input {
+    border: 1.5px solid var(--gray);
+    border-radius: 8px;
+    padding: 20px 40px 12px 12px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    height: 44px;
+    line-height: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.user-form-group input:focus {
+    border-color: var(--orange-swift-base);
+    box-shadow: 0 0 0 3px rgba(220, 68, 5, 0.1);
+}
+
+.user-form-group input:focus + .input-icon {
+    color: var(--orange-swift-base);
+}
+
+.user-form-group input::placeholder {
+    color: var(--gray);
+    opacity: 0.7;
+}
+
+.user-form-group .input-icon {
+    margin-left: -36px;
+    color: var(--gray);
+    font-size: 18px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+/* Button */
+.user-form-btn {
+    background: var(--orange-swift-base);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.user-form-btn:hover {
+    background: var(--dark-swift-base);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 68, 5, 0.3);
+}
+
+.user-form-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+.user-form-footer {
+    margin-top: 18px;
+    text-align: center;
+    color: var(--dark);
+    font-size: 15px;
+}
+
+.user-form-footer a {
+    color: var(--orange-swift-base);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.user-form-footer a:hover {
+    color: var(--dark-swift-base);
+}
+
+/* Divider with Lines */
+.user-form-divider {
+    display: flex;
+    align-items: center;
+    margin: 18px 0 10px 0;
+    color: var(--gray);
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-form-divider::before,
+.user-form-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 12px;
+    display: block;
+}
+
+/* Social Login */
+.user-form-social {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.user-form-social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1.5px solid var(--gray);
+    border-radius: 8px;
+    background: var(--light);
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    min-height: 44px;
+}
+
+.user-form-social-btn:hover {
+    border-color: var(--orange-swift-base);
+}
+
+/* Login page specific styles */
+.user-form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .checkmark {
+    background: var(--orange-swift-base);
+    border-color: var(--orange-swift-base);
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.forgot-password {
+    color: var(--orange-swift-base);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: var(--dark-swift-base);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .mobile-registration {
+        padding: 10px;
+    }
+    
+    .user-form-container {
+        margin: 0;
+        padding: 24px 20px 20px 20px;
+        border-radius: 12px;
+        max-width: 100%;
+    }
+    
+    .user-form-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .user-form {
+        gap: 16px;
+    }
+    
+    .user-form-group input {
+        font-size: 16px;
+        padding: 20px 40px 12px 12px;
+    }
+    
+    .user-form-social {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .user-form-social-btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .user-form-container {
+        margin: 20px;
+        padding: 28px 24px 24px 24px;
+    }
+    
+    .user-form-title {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+    
+    .user-form-social {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .user-form-container {
+        max-width: 400px;
+    }
+}

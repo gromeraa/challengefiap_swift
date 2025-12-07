@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7F5EB6C-3FA0-F4FF-38E8-484DF9F302D4" name="T_PEDIDO">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-21 23:36:23 UTC</createdTime>
+<generatorID>E7610E3F-9F4A-4E5E-E59B-A165F244915F</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_pedido" id="544461D0-2FF8-61BB-15AA-2DB37B6247F9">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>43EB1DA5-D38A-E2BB-7BA6-FEAAE4B2FCC4</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USER_cd_user" id="CB0CB0D9-75E3-08FA-0C12-F06BA3DFAE58">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>7D8257DC-3314-93D2-1EDC-6B5979CF963D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C83F9EB-93BF-1AFD-4107-843EC61C25E9" referredColumn="C0FC1F15-09FD-A112-1654-8CAC42B82F07"/>
+</associations>
+</Column>
+<Column name="T_FORMA_PAGAMENTO_cd_forma_pagamento" id="4021D55D-5518-98A6-8333-526A5D0AD353">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>2172FC97-BFFF-869A-241D-E931F997E22E</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05CEDC59-86A0-260A-BF72-E7C050F989C3" referredColumn="8B4EFE7F-0DCF-C071-8E37-882E9A6CB1CF"/>
+</associations>
+</Column>
+<Column name="dt_pedido" id="998C50BC-4AE1-3AC2-4AF9-0B71997DE2AD">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>C9C360AD-DE9C-0DB5-3727-F3DB34A4689A</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_pedido" id="1B7560AD-EDE1-2127-4A19-03CE6F47CFEA">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>831650F0-CC5B-620F-BAB7-53857BB2432D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_pedido" id="A7DB9699-E830-2BB6-EB68-FE1D55617D4F">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>667B9748-FD7C-8B99-CEF1-5BEB76CA82A5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_entrega_estimada" id="A6E94D52-F5C6-1948-34C6-9EA4470FB7E7">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>9472583C-BD90-C226-D2EF-C63E9D346849</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_entrega_real" id="EED1BBF5-2817-1953-044E-F92376708822">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>1F27C5C0-D45F-BF11-EB03-4415036DD36B</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B016C035-B26C-13D4-E6C8-0A2CCA7589A7" name="T_PEDIDO_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>BEE20666-4481-D49B-4813-4BD040B4ED5A</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="544461D0-2FF8-61BB-15AA-2DB37B6247F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A0DB515-F294-0B09-E127-082B826098CB" name="T_PEDIDO_T_USER_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>7CD45256-BE2C-C3DC-E029-5BB215F326A5</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB0CB0D9-75E3-08FA-0C12-F06BA3DFAE58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69044103-E48F-4C44-ABBA-EAA8B537CA18" name="T_PEDIDO_T_FORMA_PAGAMENTO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-23 03:06:40 UTC</createdTime>
+<generatorID>F5F53838-624A-B33F-5B5A-40C4F97D93B1</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4021D55D-5518-98A6-8333-526A5D0AD353"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

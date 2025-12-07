@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A9C4ACA-3BEC-0696-EFB3-152BFFDC2407" name="T_CIDADE">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>A83BD807-1BB3-150F-067B-7230341BC503</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cidade" id="87A84B3F-F991-264F-BA3B-08FFC58C3F82">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>947E51FB-60D9-D59F-9081-EE47A9F51320</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_ESTADO_cd_estado" id="52A2AA99-F8F6-E124-D193-997A36E5CA1A">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>BFB80029-0E04-2289-92F9-062885E42128</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B498F485-7175-9F8A-A9E5-B1BE324F29DD" referredColumn="C7740D4E-A06D-BAA6-140F-DD66CC509685"/>
+</associations>
+</Column>
+<Column name="nm_cidade" id="A6D8E689-B4E3-469B-2CE7-5D913278A1D1">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>9C157681-AB4C-E3C5-401E-BF796384583A</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02624BAB-C1D7-4F94-00FB-FC96DBA2551E" name="T_CIDADE_PK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>4CE89470-38EB-18B8-2EE7-D02C06C70E9D</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87A84B3F-F991-264F-BA3B-08FFC58C3F82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E26AEA0E-271F-33AD-3402-05C4A6729C0A" name="T_CIDADE_T_ESTADO_FK">
+<createdBy>grome</createdBy>
+<createdTime>2025-05-14 02:36:26 UTC</createdTime>
+<generatorID>52A6B3F1-D767-8C92-B225-E92C34E393C1</generatorID>
+<ownerDesignName>swift_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52A2AA99-F8F6-E124-D193-997A36E5CA1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
